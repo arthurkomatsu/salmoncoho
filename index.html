@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmon Premium - Venda de Salmão Coho</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-orange: #FF7A59;
+            --dark-orange: #E86A4D;
+            --light-bg: #FFF8F5;
+            --text-color: #333;
+            --heading-font: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-orange) !important;
+        }
+
+        .hero-section {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?q=80&w=2940&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-orange);
+            border-color: var(--primary-orange);
+            font-weight: 600;
+            padding: 12px 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-orange);
+            border-color: var(--dark-orange);
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            color: var(--dark-orange);
+        }
+
+        .info-card, .form-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+        
+        .light-bg-section {
+            background-color: var(--light-bg);
+        }
+
+        .price-display {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+        }
+        
+        .estimated-price-container {
+            background-color: var(--light-bg);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .estimated-price-label {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        #estimatedPrice {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-orange);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho (Logo) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#">🐟 Salmon Premium</a>
+        </div>
+    </nav>
+
+    <!-- Seção Principal (Hero) -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4">A Joia do Pacífico na sua Mesa</h1>
+            <p class="lead mb-4">Descubra o sabor e a qualidade inigualável do Salmão Coho.</p>
+            <a href="#pedido" class="btn btn-primary btn-lg">Fazer meu Pedido Agora</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção de Informações -->
+        <section class="section">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <!-- Card de Preço e Peso -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="info-card text-center">
+                            <h3 class="mb-3">Preço e Peso</h3>
+                            <p class="price-display">R$ 89,90 / kg</p>
+                            <hr>
+                            <p class="lead">Nossas peças possuem um peso médio de <strong>1,8kg</strong>, podendo variar entre 1,7kg e 2kg.</p>
+                            <p class="text-muted">O valor final é calculado com base no peso exato da peça no momento da separação.</p>
+                        </div>
+                    </div>
+                    <!-- Card de Entrega -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="info-card text-center">
+                            <h3 class="mb-3">Entregas</h3>
+                            <p class="lead">Realizamos entregas semanais nas seguintes regiões:</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Quartas-feiras:</strong> Região Central, Zona Sul</li>
+                                <li><strong>Sextas-feiras:</strong> Zona Oeste, Zona Norte</li>
+                            </ul>
+                            <p class="text-muted">Pedidos devem ser feitos com até 24h de antecedência.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Vantagens do Coho -->
+        <section class="section light-bg-section">
+            <div class="container">
+                <h2 class="section-title">Por que Salmão Coho?</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1615141992138-05a1a1b8c11a?q=80&w=2787&auto=format&fit=crop" class="img-fluid rounded shadow" alt="Filé de Salmão Coho fresco">
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <h4>A Diferença que se Sente no Sabor e na Saúde</h4>
+                        <p>No Brasil, o salmão mais comum é o do Atlântico, muito mais cultivado em sistemas intensivos e superlotados, o que aumenta o uso de medicamentos, antibióticos e pode impactar na qualidade do peixe. Já o salmão Coho é criado em ambientes com melhor manejo, menos densidade e com práticas que priorizam a qualidade, resultando em um peixe mais saudável, saboroso e com menor necessidade de medicamentos.</p>
+                        <p>O salmão Coho, uma verdadeira joia das águas do Pacífico Norte, é muito apreciado no Japão e conquista pelo sabor mais complexo e sutilmente marcante. Sua carne, menos gordurosa que a do Atlântico, oferece uma textura firme na medida certa, permitindo que cada mordida seja uma combinação equilibrada entre sabor e frescor.</p>
+                        <p><strong>Se você está buscando uma experiência diferenciada, que une qualidade, sabor e tradição gastronômica, o salmão Coho é a escolha certa.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Formulário de Pedido -->
+        <section id="pedido" class="section">
+            <div class="container">
+                <h2 class="section-title">Faça seu Pedido</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="form-section">
+                            <p class="text-center lead mb-4">Preencha os dados abaixo e entraremos em contato para confirmar seu pedido e o pagamento.</p>
+                            
+                            <!-- O atributo 'action' deste formulário precisa ser configurado com um serviço de backend -->
+                            <form id="orderForm" action="URL_DO_SEU_BACKEND" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telefone / WhatsApp</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Endereço Completo para Entrega</label>
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="Rua, Número, Bairro, Cidade" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="quantity" class="form-label">Quantidade de Peças</label>
+                                    <input type="number" class="form-control" id="quantity" name="quantity" value="1" min="1" required>
+                                </div>
+                                
+                                <div class="estimated-price-container">
+                                    <p class="estimated-price-label">Valor Estimado do Pedido</p>
+                                    <p id="estimatedPrice">R$ 152,83 a R$ 179,80</p>
+                                </div>
+
+                                <div class="d-grid mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg">Finalizar Pedido</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <h4>Salmon Premium</h4>
+            <p>CNPJ: [INSIRA SEU CNPJ AQUI]</p>
+            <p>Telefone para Contato: [INSIRA SEU TELEFONE AQUI]</p>
+            <p class="mt-3">&copy; 2025 Salmon Premium. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para cálculo do preço estimado -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const quantityInput = document.getElementById('quantity');
+            const estimatedPriceEl = document.getElementById('estimatedPrice');
+            const pricePerKg = 89.90;
+            const minWeight = 1.7;
+            const maxWeight = 2.0;
+
+            function updateEstimatedPrice() {
+                const quantity = parseInt(quantityInput.value) || 0;
+                
+                if (quantity > 0) {
+                    const minPrice = (quantity * minWeight * pricePerKg).toFixed(2);
+                    const maxPrice = (quantity * maxWeight * pricePerKg).toFixed(2);
+                    
+                    estimatedPriceEl.textContent = `R$ ${minPrice.replace('.', ',')} a R$ ${maxPrice.replace('.', ',')}`;
+                } else {
+                    estimatedPriceEl.textContent = 'R$ 0,00';
+                }
+            }
+
+            quantityInput.addEventListener('input', updateEstimatedPrice);
+            
+            // Initial calculation
+            updateEstimatedPrice();
+        });
+    </script>
+</body>
+</html>
