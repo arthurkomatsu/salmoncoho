@@ -554,9 +554,17 @@
             text-align: center;
         }
 
-        .footer-logo img {
-            height: 60px;
-            margin-bottom: 15px;
+        .brand-row {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .brand-logo {
+            height: 40px;
+            width: auto;
+            display: inline-block;
         }
 
         .footer-info p {
@@ -984,6 +992,18 @@
                             <h4>Tacos de Salmão com Manga</h4>
                         </div>
                     </div>
+                    <div class="gallery-item">
+                        <img src="Prato 10_ Breaded salmon.png" alt="Salmão empanado e crocante">
+                        <div class="gallery-overlay">
+                            <h4>Salmão Empanado Crocante</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Prato 11_ Salmon ceviche.png" alt="Ceviche de salmão fresco e cítrico">
+                        <div class="gallery-overlay">
+                            <h4>Ceviche de Salmão</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1021,15 +1041,16 @@
 
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-logo">
-                <img src="logo.png" alt="Salmon Premium Logo">
-            </div>
             <div class="footer-info">
-                <p><strong>Salmon Premium</strong></p>
-                <p>CNPJ: 54.473.002/0001-27</p>
-                <p>Contato (WhatsApp): <a href="https://api.whatsapp.com/send?phone=5561993625469">(61) 99362-5469</a>
-                </p>
-                <p>Brasília - DF</p>
+                    <p class="brand-row">
+                        <img class="brand-logo" src="logo.png" alt="Logo Salmon Premium">
+                        <strong>Salmon Premium</strong>
+                    </p>
+                    <p>CNPJ: 54.473.002/0001-27</p>
+                    <p>Contato (WhatsApp): <a href="https://api.whatsapp.com/send?phone=5561993625469">(61)
+                            99362-5469</a>
+                    </p>
+                    <p>Brasília - DF</p>
             </div>
             <div class="copyright">
                 <p>&copy; 2024 Salmon Premium. Todos os direitos reservados.</p>
